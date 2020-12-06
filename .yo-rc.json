@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "de.offersapp.aldiapi",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "microservice",
+    "baseName": "AldiApi",
+    "packageName": "de.offersapp.aldiapi",
+    "packageFolder": "de/offersapp/aldiapi",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "NzVmZDRkMDdlMTRkMmM1MGZkY2Y1M2FjOTkyZDE0MGNlMjAyMWIxZmU4MWRmMTk5YjgzNmM5MWVmZjRkYTE3NDMzMDczN2RlNzYyMTg5MDI2ZmUwNDViZDRjYTU4NTFlOTM4MGJkOTM0YmY2NTZkZmI0ZTQ5Y2NmNzYxNzMzNjg=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1607269004637,
+    "testFrameworks": ["cucumber"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": ["en", "de"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
