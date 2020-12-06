@@ -1,0 +1,53 @@
+{
+  "name": "Article",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "producer",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "ArticleCategory",
+      "fieldValues": "ELECTRONIC,EXTRAORDINARY,DRUGSTORE,FRESH,BAKERY,MEAT,MILKPRODUCTS,BEVERAGE,SWEETS,CAN"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201206154511",
+  "entityTableName": "article",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "AldiApi",
+  "applications": "*",
+  "microserviceName": "aldiApi"
+}

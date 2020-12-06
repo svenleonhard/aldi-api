@@ -1,0 +1,48 @@
+{
+  "name": "Offer",
+  "fields": [
+    {
+      "fieldName": "advantage",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "article",
+      "otherEntityRelationshipName": "offer",
+      "relationshipName": "article",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201206154611",
+  "entityTableName": "offer",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "AldiApi",
+  "applications": "*",
+  "microserviceName": "aldiApi"
+}

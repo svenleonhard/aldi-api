@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface OffersParserService {
 
-    public List<Offer> fetchOffers();
+    List<Offer> fetchOffers();
 
 }

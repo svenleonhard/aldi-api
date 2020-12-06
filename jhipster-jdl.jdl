@@ -1,0 +1,28 @@
+entity Article {
+  description String required,
+  producer String required,
+  amount String required,
+  category ArticleCategory
+  price BigDecimal,
+  picture ImageBlob
+}
+
+entity Offer {
+  advantage BigDecimal required,
+  amount String required,
+  startDate LocalDate,
+  endDate LocalDate
+}
+
+enum ArticleCategory {
+  ELECTRONIC, EXTRAORDINARY, DRUGSTORE, FRESH, BAKERY, MEAT, MILKPRODUCTS, BEVERAGE, SWEETS, CAN
+}
+
+relationship ManyToOne{
+  Offer{article} to Article
+}
+
+service all with serviceImpl
+filter all 
+
+microservice Article, Offer with aldiApi
